@@ -79,9 +79,10 @@ text-decoration: underline;
 
 .porti { 
     width: 100%;
-    height: 100%;
+    height: 600px;
     background-color: white;
-    display: inline-block;
+    display: block;
+    position: absolute;
 }
 
 .porti > .conteiner-um { 
@@ -240,3 +241,38 @@ margin-top: 50px;
                         margin-top: 50px;
                         }
 
+footer { 
+    background-color: #383849;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0%;
+    display: block;
+    overflow: hidden;
+}
+
+.Contato-content { 
+    display: block;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 38%;
+    padding: 20px;
+}
+
+.form { 
+    display: inline;
+    margin-bottom: 20px;
+    margin-left: 32%;
+}
+
+.forml { 
+    margin-left: 32%;
+    display: block;
+}
+
+#AreaMensagem { 
+    height: 90px;
+    
+}
