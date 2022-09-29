@@ -1,5 +1,3 @@
- 
- 
  *{
     margin: 0;
     padding: 0;
@@ -136,18 +134,210 @@ text-decoration: underline;
     display: block;
 }
 
-.capa {
-    height: 100%;
-    width: 100%;
-    background: url(Imagens/Capa-projeto-alt\(O\).jpg
-    );
+
+
+.containerproj .slider-container .slide {
+    
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+
+}
+
+.containerproj .slider-container .slide .contentproj { 
+
+    flex:  1 1 350px;
+    animation: slideContent .4s linear .4s backwards;
+
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translate(-50%);
+}
+
+}
+
+.containerproj .slider-container .slide .contentproj h3 {
+
+    font-size: 35px;
+    color: #4e4e4e;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+
+.containerproj .slider-container .slide .contentproj p {
+
+    font-size: 16px;
+    color: white;
+    font-family: 'Baloo Da 2', cursive;
+    width: 50%;
+    height: 10%;    
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.containerproj .slider-container .slide .contentproj .btn-ref {
+
+    margin-top: 10px;
+    display: inline-block;
+    background: #5c5c5c;
+    color: black;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid #111111;
+    font-family: 'Baloo Da 2', cursive;
+    text-decoration: none;
+}
+
+.containerproj .slider-container .slide .contentproj .btn-ref:hover {
+
+    background: #747474;
+    border: 2px solid #111111;
+    color: white;
+}
+
+.containerproj .slider-container {
+    display: none;
+}
+
+.containerproj .slider-container.active {
+    display: block;
+}
+
+.containerproj .slider-container:nth-child(1) .slide{
+
+    background: url(Imagens/Slider/Reforma.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.containerproj .slider-container:nth-child(2) .slide{
+
+    background: url(Imagens/Slider/EnergiaSolar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.containerproj .slider-container:nth-child(3) .slide{
+
+    background: url(Imagens/Slider/PinturaResidencial.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.containerproj #prev,
+.containerproj #next{
+    
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    color: white;
+    background: #5c5c5c;
+    height: 48px;
+    width: 48px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerproj #prev:hover,
+.containerproj #next:hover{
+    background: #8a8a8a;
+}
+
+.containerproj #prev{
+    left: 20px;
+}
+
+.containerproj #next{
+    right: 20px;
+}
+
+@media(max-width: 500px){
+    .containerproj #prev{
+        top: 50%;
+        right: 60%;
+    }
+
+        .containerproj #next{
+        top: 50%;
+        right: 0%;
+    }
+
+    .containerproj .slider-container .slide .contentproj p {
+
+        font-size: 16px;
+        margin: auto;
+
+    }
+    
+    .containerproj .slider-container .slide .contentproj h3{
+
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .containerproj .slider-container .slide .contentproj .btn-ref {
+        
+        margin-left: 30%;
+        margin-bottom: 20%;
+
+    }
 
 }
 
 
+
+
 #porti { 
     margin-left: 8%;
+    margin-top: 28%;
+}
+
+@media(max-width: 658px){ 
+
+    #porti { 
+        margin-left: 8%;
+        margin-top: 30%;
+    }
+
+}
+
+@media(max-width: 456px){ 
+
+    #porti { 
+        margin-left: 8%;
+        margin-top: 40%;
+    }
+
+}
+
+@media(max-width: 396px){ 
+
+    #porti { 
+        margin-left: 8%;
+        margin-top: 50%;
+    }
+
 }
 
 .title {

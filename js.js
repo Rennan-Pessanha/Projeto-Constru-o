@@ -1,15 +1,18 @@
-function contato() {
-    let Nome = document.getElementById('InputName')
-    let Assunto = document.getElementById('AssuntoContent')
-    let Email = document.getElementById('InputEmail')
-    let Mensagem = document.getElementById('AreaMensagem')
-    let TextContent = document.getElementById('spanG')
+let slides = document.querySelectorAll('.slider-container')
 
-    if(Nome.value == '' || Assunto.value == '' || Email.value == '' || Mensagem.value == '') {
-        TextContent.innerHTML = 'Por favor, preencha todos os campos'
-    } else {
- 
-    }
+let index = 0
 
 
+function next(){
+    slides[index].classList.remove('active')
+    index = (index + 1) % slides.length
+    slides[index].classList.add('active')
 }
+
+function prev(){
+    slides[index].classList.remove('active')
+    index = (index - 1 + slides.length) % slides.length
+    slides[index].classList.add('active')
+}
+
+setInterval(next, 8000);
