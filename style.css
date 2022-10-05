@@ -310,7 +310,7 @@ text-decoration: underline;
 
 #porti { 
     margin-left: 8%;
-    margin-top: 28%;
+    margin-top: 250px;
 }
 
 @media(max-width: 658px){ 
@@ -326,7 +326,7 @@ text-decoration: underline;
 
     #porti { 
         margin-left: 8%;
-        margin-top: 40%;
+        margin-top: 50%;
     }
 
 }
@@ -335,7 +335,16 @@ text-decoration: underline;
 
     #porti { 
         margin-left: 8%;
-        margin-top: 50%;
+        margin-top: 60%;
+    }
+
+}
+
+@media(max-width: 295px){ 
+
+    #porti { 
+        margin-left: 8%;
+        margin-top: 80%;
     }
 
 }
